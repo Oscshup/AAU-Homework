@@ -5,11 +5,11 @@ using UnityEngine;
 public class AgeScript : MonoBehaviour
 {
     // Variables 
-    int age = 24;
-    int additionalAge = 4;
+    public int age = 24;
+    public int additionalAge = 4;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         // Test increasing age by 1 year (default)
         IncreaseAge(age);
@@ -28,7 +28,7 @@ public class AgeScript : MonoBehaviour
     }
 
     // Helper function to log the results
-    private void logAge(int newAge, int addedYear)
+    public void logAge(int newAge, int addedYear)
     {
         if (addedYear == 1)
         {
